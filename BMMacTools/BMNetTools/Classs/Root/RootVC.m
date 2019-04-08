@@ -8,15 +8,6 @@
 
 #import "RootVC.h"
 
-@interface RootVC ()
-
-@end
-
 @implementation RootVC
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
 
 @end
