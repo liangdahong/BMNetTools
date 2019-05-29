@@ -25,7 +25,7 @@
     [array enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSArray <NSString *> *arr1 = [obj componentsSeparatedByString:@"\n"];
         if (arr1.count == 2) {
-            NSString *name =  [arr1[1] componentsSeparatedByString:@"/officeAuto-controller/"][1];
+            NSString *name =  [arr1[1] componentsSeparatedByString:@"/bm-officeAuto-admin-api/"][1];
             NSMutableArray <NSString *> *arr = [name componentsSeparatedByString:@"/"].mutableCopy;
             NSMutableString *strname = @"BM".mutableCopy;
             [strname appendString:([arr[0] substringWithRange:NSMakeRange(0, 1)]).uppercaseString];
