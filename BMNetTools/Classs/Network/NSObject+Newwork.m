@@ -69,6 +69,17 @@ NSFileManager *fileManager;
     NSString *filePath_h = [NSString stringWithFormat:@"%@/%@.h", hfile, model.className];
     // 初始化字符串
     NSMutableString *str_h = @"".mutableCopy;
+
+    // 版权信息
+    [str_h appendString:@"//\n"];
+    [str_h appendFormat:@"//  %@.h\n", model.className];
+    [str_h appendString:@"//  \n"];
+    [str_h appendFormat:@"//  Created by ___liangdahong on %@.\n", [NSDate date].description];
+    [str_h appendFormat:@"//  Copyright © 月亮小屋（中国）有限公司. All rights reserved.\n"];
+    [str_h appendString:@"//  \n"];
+    [str_h appendString:@"//  本文件由（ https://github.com/liangdahong/BMNetTools ）自动生成\n"];
+    [str_h appendString:@"//  \n\n"];
+
     [str_h appendFormat:@"#import \"%@.h\"\n\n", import_base_class];
     [str_h appendString:@"/**\n"];
     // 注释内容
@@ -83,6 +94,17 @@ NSFileManager *fileManager;
     // 获取m文件路径
     NSString *filePath_m = [NSString stringWithFormat:@"%@%@/%@.m",user_path, model.className, model.className];
     NSMutableString *str_m =  @"".mutableCopy;
+
+    // 版权信息
+    [str_m appendString:@"//\n"];
+    [str_m appendFormat:@"//  %@.m\n", model.className];
+    [str_m appendString:@"//  \n"];
+    [str_m appendFormat:@"//  Created by ___liangdahong on %@.\n", [NSDate date].description];
+    [str_m appendFormat:@"//  Copyright © 月亮小屋（中国）有限公司. All rights reserved.\n"];
+    [str_m appendString:@"//  \n"];
+    [str_m appendString:@"//  本文件由（ https://github.com/liangdahong/BMNetTools ）自动生成\n"];
+    [str_m appendString:@"//  \n\n"];
+
     [str_m appendFormat:@"#import \"%@.h\"\n\n", model.className];
     [str_m appendFormat:@"@implementation %@\n\n", model.className];
     [str_m appendFormat:@"- (NSString *)interfaceUrl {\n    return %@;\n}\n\n", model.macroName_url];
