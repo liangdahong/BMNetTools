@@ -12,7 +12,6 @@ NSMutableArray *arr;
 NSUInteger caculateLineNumberofFile(NSString *path, NSArray <NSString *> *names)
 {
     // 代码行数
-    
     NSUInteger count = 0;
 
     //得到文件管理这个类

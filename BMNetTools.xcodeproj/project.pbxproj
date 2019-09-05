@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A3848E23210C1F00D43907 /* NewworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3848D23210C1F00D43907 /* NewworkModel.m */; };
+		05A3849123210CE700D43907 /* BMCourseTeacherSignAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3848F23210CE700D43907 /* BMCourseTeacherSignAPIManager.m */; };
+		05AAFB2323210BA50056174F /* NSObject+Newwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AAFB2223210BA50056174F /* NSObject+Newwork.m */; };
 		315B630E1E6270BB007414D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315B630D1E6270BB007414D9 /* Assets.xcassets */; };
 		315B63111E6270BB007414D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315B630F1E6270BB007414D9 /* Main.storyboard */; };
 		315B63381E627191007414D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 315B63361E627191007414D9 /* AppDelegate.m */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05A3848C23210C1F00D43907 /* NewworkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewworkModel.h; sourceTree = "<group>"; };
+		05A3848D23210C1F00D43907 /* NewworkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewworkModel.m; sourceTree = "<group>"; };
+		05A3848F23210CE700D43907 /* BMCourseTeacherSignAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMCourseTeacherSignAPIManager.m; sourceTree = "<group>"; };
+		05A3849023210CE700D43907 /* BMCourseTeacherSignAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMCourseTeacherSignAPIManager.h; sourceTree = "<group>"; };
+		05AAFB2123210BA50056174F /* NSObject+Newwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Newwork.h"; sourceTree = "<group>"; };
+		05AAFB2223210BA50056174F /* NSObject+Newwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Newwork.m"; sourceTree = "<group>"; };
 		315B63011E6270BB007414D9 /* BMNetTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMNetTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315B630D1E6270BB007414D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315B63101E6270BB007414D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,9 +128,9 @@
 		315B633A1E6271AA007414D9 /* Classs */ = {
 			isa = PBXGroup;
 			children = (
-				315B63431E6276EC007414D9 /* CodeStatistics */,
-				315B633B1E6271CE007414D9 /* Network */,
 				315B633C1E6271CE007414D9 /* Root */,
+				315B633B1E6271CE007414D9 /* Network */,
+				315B63431E6276EC007414D9 /* CodeStatistics */,
 			);
 			path = Classs;
 			sourceTree = "<group>";
@@ -129,8 +138,14 @@
 		315B633B1E6271CE007414D9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				05A3849023210CE700D43907 /* BMCourseTeacherSignAPIManager.h */,
+				05A3848F23210CE700D43907 /* BMCourseTeacherSignAPIManager.m */,
 				315B63401E6272F2007414D9 /* NetworkVC.h */,
 				315B63411E6272F2007414D9 /* NetworkVC.m */,
+				05AAFB2123210BA50056174F /* NSObject+Newwork.h */,
+				05AAFB2223210BA50056174F /* NSObject+Newwork.m */,
+				05A3848C23210C1F00D43907 /* NewworkModel.h */,
+				05A3848D23210C1F00D43907 /* NewworkModel.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -292,7 +307,10 @@
 				315B63421E6272F2007414D9 /* NetworkVC.m in Sources */,
 				315B63461E6276F4007414D9 /* CodeStatisticsVC.m in Sources */,
 				315B63391E627191007414D9 /* main.m in Sources */,
+				05A3849123210CE700D43907 /* BMCourseTeacherSignAPIManager.m in Sources */,
 				315B63381E627191007414D9 /* AppDelegate.m in Sources */,
+				05A3848E23210C1F00D43907 /* NewworkModel.m in Sources */,
+				05AAFB2323210BA50056174F /* NSObject+Newwork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
