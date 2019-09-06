@@ -81,11 +81,13 @@ NSFileManager *fileManager;
     [str_h appendString:@"//  \n\n"];
 
     [str_h appendFormat:@"#import \"%@.h\"\n\n", import_base_class];
+    [str_h appendString:@"NS_ASSUME_NONNULL_BEGIN\n\n"];
     [str_h appendString:@"/**\n"];
     // 注释内容
     [str_h appendString:model.comment];
     [str_h appendString:@"\n*/\n"];
     [str_h appendFormat:@"@interface %@ : %@\n\n@end\n", model.className, import_base_class];
+    [str_h appendString:@"NS_ASSUME_NONNULL_END\n\n"];
     // 创建文件
     [str_h writeToFile:filePath_h atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NewworkModel.h"
+#import "BMBaseTokenAPIManager.h"
 
 /*
 
@@ -27,7 +28,7 @@
 
 #define user_path @"/Users/Mac/Desktop/temp/"
 
-#define import_base_class @"BMBaseAPIManager"
+#define import_base_class @"BMBaseTokenAPIManager"
 
 
 NS_ASSUME_NONNULL_BEGIN
